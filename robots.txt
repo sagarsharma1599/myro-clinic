@@ -1,0 +1,6 @@
+User-agent: Googlebot
+
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Sitemap:  https://myroclinic.com/sitemap.xml 

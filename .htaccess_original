@@ -1,0 +1,12 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^myroclinic.com[nc]
+RewriteRule ^(.*)$ http://www.myroclinic.com/$1 [r=301,nc]
+
+//301 Redirect Old File
+Redirect 301 https://www.myroclinic.com/index.html#!  https://myroclinic.com/index.html
+
+//301 Redirect Entire Directory
+RedirectMatch 301 https://myroclinic.com/index.html#! (.*) https://myroclinic.com/index.html/$1
+  
